@@ -1,0 +1,526 @@
+/* fonts to use from, copy and paste the font you want
+font-family: 'Righteous', cursive;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Encode Sans Condensed', sans-serif;
+font-family: 'Shadows Into Light Two', cursive;
+*/
+
+/* Color palette
+#F7FF70  YELLOW
+#FFC3BD PINK
+#91EC9E GREEN
+#D8FFDF LIGHT BLUE
+#66C8D1 BLUE */
+
+/* new color pallete
+#ff8773 light to
+#dc7772
+#bc6972
+#9b5c72
+#7d4e73 dark sunset*/
+
+/* -------------------------------------------Vivian's code------------------------------------------- */
+html {
+  overflow-y: scroll;
+}
+body{
+  background-color: #ff8773;
+  margin: 0;
+  font-family: 'Righteous', cursive;
+}
+.header h1{
+  font-family: 'Righteous', cursive;
+  background-color: #bc6972;
+  margin: 0;
+  font-size: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #472b41;
+  text-align: center;
+}
+.text {
+  margin: 0;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-size: 23px;
+  background-color: #ff8773;
+  text-align: center;
+  font-weight: bold;
+  color: #2f2b47;
+}
+.down {
+  margin-top: 100px;
+}
+/* Navigation Bar style */
+
+#navbar {
+  overflow: hidden;
+  background-color: #bc6972;
+  font-family: 'Righteous', cursive;
+  z-index: 1;
+  font-weight: normal;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+  background-color: #dc7772;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: #ff8773;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+/*End of navigation bar*/
+
+.bod {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  color: grey;
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* button */
+#myBtn {
+  background-color: #7d4e73;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+#myBtn:hover {
+    background-color: #4bbf30;
+    color: white;
+}
+
+/*logo*/
+.logo{
+  width: 15%;
+  height: 15%;
+  background-color: #bc6972;
+}
+
+/* game area */
+canvas { background: pink;
+  display: block;
+  margin: 10px;
+  border-radius: 12px;
+}
+.wrapper {
+    text-align: center;
+}
+/* button position */
+.button {
+    position: absolute;
+    top: 50%;
+}
+footer{
+  text-align: center;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  position:fixed;
+  bottom:0;
+  font-weight: normal;
+  font-size: 15px;
+  color: grey;
+  font-style: normal;
+}
+
+
+
+/* -------------------------------------------Assiton's code------------------------------------------- */
+.report{
+  border: 2px solid #ffffff;
+  background-color: #ffdab9;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 10px 100px 10px 100px;
+  width: 55%;
+}
+
+.container {
+    border: 2px solid #ffffff;
+    background-color: #ADD8E6;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px 100px 10px 100px;
+    width: 55%;
+}
+.therapists{
+  /* border: 2px solid #ffffff;
+  background-color: 	#ADD8E6;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 10px 100px 10px 100px;
+  width: 55%; */
+}
+
+}
+/* Darker chat container */
+.darker {
+    border-color: 	#ffffff;
+    background-color: 	#ffdab9;
+
+}
+
+.alignRight{
+  float:right;
+    background-color: #dcc1d7;
+
+}
+.alignLeft{
+  float:left;
+
+    background-color:	#dcc1d7;
+}
+
+
+/* Clear floats */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style images */
+.container img {
+    float: left;
+    max-width: 100px;
+    width: 50%;
+    margin-right: 30px;
+    border-radius: 20%;
+
+}
+
+/* Style the right image */
+.container img.right {
+    float: right;
+    margin-left: 80px;
+    margin-right:30px;
+}
+
+/* Style time text */
+.time-right {
+    float: right;
+    color: 	#ffdab9;
+}
+
+/* Style time text */
+.time-left {
+    float: left;
+    color: #ADD8E6;
+}
+p{font-size:20pt ;
+  color: #5d3338;
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+   font-weight: bold;
+}
+.therapistsimg{
+  width:35%;
+height:35%;
+float: left;
+margin-right: 30px;
+/* margin: 30px 30px 30px 30px; */
+}
+.fillertext{
+  font-size: 20px;
+  margin-top: 10px;
+}
+/* div{
+  text-align: center;
+} */
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background:  #ff8773;
+}
+/* Slides */
+.QuoteSlide {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #7d4e73;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 12px;
+  user-select: none;
+  transition: 0.6s ease;
+  left: 40px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #7d4e73;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 12px;
+  user-select: none;
+  transition: 0.6s ease;
+  right: 60px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #bc6972;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #dc7772;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #ff8773;
+}
+
+
+
+/* -------------------------------------------Lawren's Code------------------------------------------- */
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: none;
+    background-color: #FFC3BD;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #D8FFDF;
+  color: grey;
+  border: none;
+  border-top: none;
+  outline: none;
+  border-bottom: none;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #66C8D1;
+  color: white;
+  border: none;
+  border-top: none;
+  outline: none;
+  border-bottom: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+    border-top: none;
+    outline: none;
+    border-bottom: none;
+}
+
+.Amused {font-size: 60px;
+text-align: center;}
+h2 {font-size: 30px;
+text-align: center;}
+h1{font-size: 80px;
+text-align: center;}
+
+/* -------------------------------------------Rhema's code------------------------------------------- */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+}
+
+/* -------------------------------------------DaShell's code------------------------------------------- */
+* {box-sizing: border-box}
+.mySlides {display: none}
+.slides {vertical-align: middle;}
+#lawren{
+  transform: rotate(0deg);
+}
+
+/* Slideshow container */
+.slideshow-containerd {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prevd {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #7d4e73;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 12px;
+  user-select: none;
+  transition: 0.6s ease;
+  left: 10px;
+
+}
+
+/* Position the "next button" to the right */
+.nextd {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #7d4e73;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 12px;
+  user-select: none;
+  transition: 0.6s ease;
+  right: 40px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevd:hover, .nextd:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
